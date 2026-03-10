@@ -1,1 +1,12 @@
-@import 'tailwindcss';
+@import "tailwindcss";
+
+@theme {
+  --font-rounded: "M PLUS Rounded 1c", sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-rounded);
+    @apply bg-[#F4F7F9] text-slate-800 antialiased;
+  }
+}
